@@ -1,0 +1,27 @@
+nohup: ignoring input
+[2026-11-15 23:43:31,119] INFO: Loading GT 3D...
+[2026-11-15 23:43:33,169] INFO:   Loaded 150 sequences from [1, 5, 6, 7, 8]
+[2026-11-15 23:43:34,957] INFO:   Loaded 59 sequences from [9, 11]
+[2026-11-15 23:43:35,248] INFO: [check] L2 std=0.5594, GT std=0.6085, ratio=0.919
+[2026-11-15 23:43:35,249] INFO: [G2] Seed 1/3
+[2026-11-15 23:43:35,953] INFO:   Train windows: 9518, Val windows: 3462 (aug=True)
+[2026-11-15 23:43:36,107] INFO:   Params: 0.16M, dropout=0.5
+[2026-11-15 23:50:13,123] INFO:   E 10/40 loss=1.3605 tr=0.5398 val=0.0479 best=0.0748 (e2, no_improve=8)
+[2026-11-15 23:53:28,350] INFO:   Early stop at epoch 17 (no improvement for 15 epochs)
+[2026-11-15 23:53:28,351] INFO: [G2] Seed 0 = 0.0748
+[2026-11-15 23:53:28,351] INFO: [G2] Seed 2/3
+[2026-11-15 23:53:29,288] INFO:   Train windows: 9518, Val windows: 3462 (aug=True)
+[2026-11-15 23:53:29,480] INFO:   Params: 0.16M, dropout=0.5
+[2026-11-15 23:58:17,329] INFO:   E 10/40 loss=1.3509 tr=0.5412 val=0.0471 best=0.1109 (e4, no_improve=6)
+[2026-11-16 00:01:25,279] INFO:   Early stop at epoch 19 (no improvement for 15 epochs)
+[2026-11-16 00:01:25,280] INFO: [G2] Seed 1 = 0.1109
+[2026-11-16 00:01:25,280] INFO: [G2] Seed 3/3
+[2026-11-16 00:01:25,826] INFO:   Train windows: 9518, Val windows: 3462 (aug=True)
+[2026-11-16 00:01:25,841] INFO:   Params: 0.16M, dropout=0.5
+[2026-11-16 00:04:49,138] INFO:   E 10/40 loss=1.3198 tr=0.5472 val=0.0676 best=0.0676 (e1, no_improve=9)
+[2026-11-16 00:08:20,393] INFO:   E 20/40 loss=1.0325 tr=0.6520 val=0.0479 best=0.0962 (e17, no_improve=3)
+[2026-11-16 00:11:49,990] INFO:   E 30/40 loss=0.8900 tr=0.6976 val=0.0546 best=0.0962 (e17, no_improve=13)
+[2026-11-16 00:12:34,817] INFO:   Early stop at epoch 32 (no improvement for 15 epochs)
+[2026-11-16 00:12:34,857] INFO: [G2] Seed 2 = 0.0962
+[2026-11-16 00:12:34,881] INFO: G2: 0.0940+/-0.0148
+[2026-11-16 00:12:34,897] INFO: Results: L3/results/

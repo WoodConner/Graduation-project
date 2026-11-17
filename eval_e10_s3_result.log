@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/wood/long task/FMPose3D_PathA/eval_e10_s3_only.py", line 7, in <module>
+    from fmpose3d.common import Human36mDataset, Fusion, define_actions
+ImportError: cannot import name 'define_actions' from 'fmpose3d.common' (/home/wood/long task/FMPose3D_PathA/fmpose3d/common/__init__.py)

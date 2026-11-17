@@ -1,0 +1,18 @@
+[2026-11-15 23:23:23,486] Device=cuda steps=5 num_hyp=4
+[2026-11-15 23:23:23,487] FIXED: Using per-camera transformation parameters
+[2026-11-15 23:23:28,307] Loaded cameras for 2 subjects (S9, S11)
+[2026-11-15 23:23:30,944] Loaded checkpoint (key=None)
+[2026-11-15 23:23:30,944] Test-only mode: S9/S11
+/home/wood/long task/FMPose3D_PathA/L3/gen_l2_poses_fixed.py:118: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+/home/wood/long task/FMPose3D_PathA/L3/gen_l2_poses_fixed.py:138: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[2026-11-15 23:23:55,144]   10/59 done
+[2026-11-15 23:24:21,703]   20/59 done
+[2026-11-15 23:24:50,016]   30/59 done
+[2026-11-15 23:25:05,855]   40/59 done
+[2026-11-15 23:25:25,292]   50/59 done
+[2026-11-15 23:25:44,839] Generated 59 seqs from subjects [9, 11]
+[2026-11-15 23:25:47,172]   Loaded 150 sequences from [1, 5, 6, 7, 8]
+[2026-11-15 23:25:47,173] Test-only: train=GT(150), val=L2(59)
+[2026-11-15 23:25:47,359] Saved to L3/l2_poses_test_fixed_v5.npz | train=150 val=59

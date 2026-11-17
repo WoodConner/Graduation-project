@@ -1,0 +1,14 @@
+[2026-11-15 19:31:13,793] Device=cuda steps=5 num_hyp=4
+[2026-11-15 19:31:13,794] FIXED: Using per-camera transformation parameters
+Traceback (most recent call last):
+  File "/home/wood/long task/FMPose3D_PathA/L3/gen_l2_poses_fixed.py", line 172, in <module>
+    main()
+  File "/home/wood/long task/FMPose3D_PathA/L3/gen_l2_poses_fixed.py", line 154, in main
+    cameras = load_cameras(args.gt_path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wood/long task/FMPose3D_PathA/L3/gen_l2_poses_fixed.py", line 32, in load_cameras
+    metadata = data["metadata"].item()
+               ~~~~^^^^^^^^^^^^
+  File "/home/wood/bash/lib/python3.12/site-packages/numpy/lib/npyio.py", line 263, in __getitem__
+    raise KeyError(f"{key} is not a file in the archive")
+KeyError: 'metadata is not a file in the archive'

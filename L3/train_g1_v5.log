@@ -1,0 +1,29 @@
+nohup: ignoring input
+[2026-11-15 23:43:30,984] INFO: Loading GT 3D...
+[2026-11-15 23:43:33,781] INFO:   Loaded 150 sequences from [1, 5, 6, 7, 8]
+[2026-11-15 23:43:35,825] INFO:   Loaded 59 sequences from [9, 11]
+[2026-11-15 23:43:35,837] WARNING: L2 placeholder: using GT
+[2026-11-15 23:43:35,839] INFO: [G1] Seed 1/3
+[2026-11-15 23:43:36,905] INFO:   Train windows: 9518, Val windows: 59 (aug=True)
+[2026-11-15 23:43:37,576] INFO:   Params: 0.16M, dropout=0.5
+[2026-11-15 23:44:16,387] INFO:   E 10/40 loss=1.3672 tr=0.5365 val=0.2373 best=0.3559 (e4, no_improve=6)
+[2026-11-15 23:44:41,982] INFO:   Early stop at epoch 19 (no improvement for 15 epochs)
+[2026-11-15 23:44:41,984] INFO: [G1] Seed 0 = 0.3559
+[2026-11-15 23:44:41,984] INFO: [G1] Seed 2/3
+[2026-11-15 23:44:42,819] INFO:   Train windows: 9518, Val windows: 59 (aug=True)
+[2026-11-15 23:44:42,849] INFO:   Params: 0.16M, dropout=0.5
+[2026-11-15 23:45:12,852] INFO:   E 10/40 loss=1.3461 tr=0.5390 val=0.2373 best=0.3898 (e8, no_improve=2)
+[2026-11-15 23:45:43,089] INFO:   E 20/40 loss=1.0507 tr=0.6447 val=0.3051 best=0.4576 (e15, no_improve=5)
+[2026-11-15 23:46:26,793] INFO:   E 30/40 loss=0.9165 tr=0.6886 val=0.4237 best=0.4746 (e23, no_improve=7)
+[2026-11-15 23:46:49,462] INFO:   Early stop at epoch 38 (no improvement for 15 epochs)
+[2026-11-15 23:46:49,473] INFO: [G1] Seed 1 = 0.4746
+[2026-11-15 23:46:49,473] INFO: [G1] Seed 3/3
+[2026-11-15 23:46:50,229] INFO:   Train windows: 9518, Val windows: 59 (aug=True)
+[2026-11-15 23:46:50,257] INFO:   Params: 0.16M, dropout=0.5
+[2026-11-15 23:47:24,256] INFO:   E 10/40 loss=1.3233 tr=0.5484 val=0.3220 best=0.3390 (e9, no_improve=1)
+[2026-11-15 23:48:11,178] INFO:   E 20/40 loss=1.0512 tr=0.6448 val=0.2542 best=0.3898 (e18, no_improve=2)
+[2026-11-15 23:48:57,873] INFO:   E 30/40 loss=0.9034 tr=0.6922 val=0.3051 best=0.3898 (e18, no_improve=12)
+[2026-11-15 23:49:10,040] INFO:   Early stop at epoch 33 (no improvement for 15 epochs)
+[2026-11-15 23:49:10,041] INFO: [G1] Seed 2 = 0.3898
+[2026-11-15 23:49:10,050] INFO: G1: 0.4068+/-0.0499
+[2026-11-15 23:49:19,472] INFO: Results: L3/results/

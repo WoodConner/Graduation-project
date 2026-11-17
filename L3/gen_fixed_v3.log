@@ -1,0 +1,50 @@
+[2026-11-15 23:18:39,646] Device=cuda steps=5 num_hyp=4
+[2026-11-15 23:18:39,647] FIXED: Using per-camera transformation parameters
+[2026-11-15 23:18:48,042] Loaded cameras for 2 subjects (S9, S11)
+[2026-11-15 23:19:44,327] Loaded checkpoint (key=None)
+[2026-11-15 23:19:44,327] Test-only mode: S9/S11
+/home/wood/long task/FMPose3D_PathA/L3/gen_l2_poses_fixed.py:113: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Traceback (most recent call last):
+  File "/home/wood/long task/FMPose3D_PathA/L3/gen_l2_poses_fixed.py", line 236, in <module>
+    main()
+  File "/home/wood/long task/FMPose3D_PathA/L3/gen_l2_poses_fixed.py", line 223, in main
+    va_seqs, va_lbls = gen_sequences(model, det_pos, H36M_TEST_SUBJECTS, gt_pos, cameras, args.steps, args.num_hyp, args.chunk, device)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wood/long task/FMPose3D_PathA/L3/gen_l2_poses_fixed.py", line 188, in gen_sequences
+    pred_3d = batched_euler_sample_with_tta(model, seq_2d, camera_params, steps, num_hyp, chunk, device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wood/bash/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wood/long task/FMPose3D_PathA/L3/gen_l2_poses_fixed.py", line 116, in batched_euler_sample_with_tta
+    v = model(x2d, x3d, t_s)
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/home/wood/bash/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wood/bash/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wood/long task/FMPose3D_PathA/fmpose3d/models/fmpose3d/model_GAMLP.py", line 282, in forward
+    in_emb = self.encoder(x_in)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/wood/bash/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wood/bash/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wood/long task/FMPose3D_PathA/fmpose3d/models/fmpose3d/model_GAMLP.py", line 225, in forward
+    x = self.fc1(x)
+        ^^^^^^^^^^^
+  File "/home/wood/bash/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wood/bash/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wood/bash/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: mat1 and mat2 must have the same dtype, but got Double and Half

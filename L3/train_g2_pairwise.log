@@ -1,0 +1,25 @@
+nohup: ignoring input
+[2026-11-15 18:16:38,444] INFO: Starting G2 training with pairwise features (272-dim)
+[2026-11-15 18:16:38,445] INFO: Loading L2 output sequences...
+[2026-11-15 18:16:39,382] INFO: [G2] Seed 1/2
+[2026-11-15 18:17:00,415] INFO:   Created 9518 windows from 150 sequences
+AttributeError: 'float' object has no attribute 'sqrt'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/wood/long task/FMPose3D_PathA/L3/train_pairwise_complete.py", line 251, in <module>
+    main()
+  File "/home/wood/long task/FMPose3D_PathA/L3/train_pairwise_complete.py", line 174, in main
+    val_ds = PairwiseActionDataset(va_seqs, va_lbls, window_len=120, 
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wood/long task/FMPose3D_PathA/L3/train_pairwise_complete.py", line 55, in __init__
+    pairwise = seq_to_pairwise_features(win)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wood/long task/FMPose3D_PathA/L3/train_pairwise_complete.py", line 24, in seq_to_pairwise_features
+    dists = np.linalg.norm(seq[t][:, None] - seq[t][None, :], axis=-1)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wood/bash/lib/python3.12/site-packages/numpy/linalg/linalg.py", line 2583, in norm
+    return sqrt(add.reduce(s, axis=axis, keepdims=keepdims))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: loop of ufunc does not support argument 0 of type float which has no callable sqrt method

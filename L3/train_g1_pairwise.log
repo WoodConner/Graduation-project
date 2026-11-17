@@ -1,0 +1,27 @@
+nohup: ignoring input
+[2026-11-15 18:12:37,997] INFO: Starting G1 training with pairwise features (272-dim)
+[2026-11-15 18:12:37,998] INFO: Loading GT 3D sequences...
+[2026-11-15 18:12:40,730] INFO:   Loaded 150 sequences from [1, 5, 6, 7, 8]
+[2026-11-15 18:12:42,882] INFO:   Loaded 59 sequences from [9, 11]
+[2026-11-15 18:12:42,902] INFO: [G1] Seed 1/2
+[2026-11-15 18:13:04,519] INFO:   Created 9518 windows from 150 sequences
+[2026-11-15 18:13:11,400] INFO:   Created 3307 windows from 59 sequences
+[2026-11-15 18:13:11,757] INFO:   Model params: 44.2K
+[2026-11-15 18:13:11,757] INFO:   Train windows: 9518, Val windows: 3307
+[2026-11-15 18:13:44,397] INFO:   E 10/40: loss=1.7396 tr_acc=0.4393 val_acc=0.4004 best=0.4004 (e10)
+[2026-11-15 18:13:47,168] INFO:   E 20/40: loss=1.4698 tr_acc=0.5269 val_acc=0.4309 best=0.4330 (e19)
+[2026-11-15 18:13:49,852] INFO:   E 30/40: loss=1.3885 tr_acc=0.5572 val_acc=0.4418 best=0.4418 (e30)
+[2026-11-15 18:13:52,385] INFO:   E 40/40: loss=1.3667 tr_acc=0.5602 val_acc=0.4436 best=0.4439 (e35)
+[2026-11-15 18:13:52,385] INFO: [G1] Seed 0 = 0.4439
+[2026-11-15 18:13:52,386] INFO: [G1] Seed 2/2
+[2026-11-15 18:14:12,729] INFO:   Created 9518 windows from 150 sequences
+[2026-11-15 18:14:20,506] INFO:   Created 3307 windows from 59 sequences
+[2026-11-15 18:14:20,511] INFO:   Model params: 44.2K
+[2026-11-15 18:14:20,511] INFO:   Train windows: 9518, Val windows: 3307
+[2026-11-15 18:14:23,830] INFO:   E 10/40: loss=1.7077 tr_acc=0.4508 val_acc=0.4097 best=0.4097 (e10)
+[2026-11-15 18:14:26,089] INFO:   E 20/40: loss=1.4715 tr_acc=0.5207 val_acc=0.4354 best=0.4388 (e19)
+[2026-11-15 18:14:28,372] INFO:   E 30/40: loss=1.3867 tr_acc=0.5500 val_acc=0.4439 best=0.4439 (e30)
+[2026-11-15 18:14:30,734] INFO:   E 40/40: loss=1.3743 tr_acc=0.5558 val_acc=0.4418 best=0.4439 (e30)
+[2026-11-15 18:14:30,734] INFO: [G1] Seed 1 = 0.4439
+[2026-11-15 18:14:30,734] INFO: G1: 0.4439+/-0.0000
+[2026-11-15 18:14:30,735] INFO: Results saved to L3/results_pairwise

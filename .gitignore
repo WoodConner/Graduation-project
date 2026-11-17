@@ -1,0 +1,32 @@
+# 权重和 checkpoint：整个排除
+checkpoint/
+*.pth
+*.weights
+*.bak
+*.bak2
+
+# dataset：只放行 2 个 npz 和 readme
+dataset/*
+!dataset/data_2d_h36m_cpn_ft_h36m_dbb.npz
+!dataset/data_3d_h36m.npz
+!dataset/readme.txt
+
+# results_final：只放行 best.pth 和 README
+results_final/*
+!results_final/L2_pathA_best.pth
+!results_final/README.md
+
+# L3 下所有 npz 排除，只放行 v8
+L3/*.npz
+!L3/l2_poses_v8.npz
+
+# 日志、预测、缓存
+L3/results/
+L3/results_pairwise/
+logs/
+predictions/
+__pycache__/
+*.py[cod]
+.venv/
+.idea/
+.vscode/

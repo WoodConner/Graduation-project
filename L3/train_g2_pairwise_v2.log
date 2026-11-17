@@ -1,0 +1,21 @@
+nohup: ignoring input
+[2026-11-15 18:19:37,359] INFO: Starting G2 training with pairwise features (272-dim)
+[2026-11-15 18:19:37,359] INFO: Loading L2 output sequences...
+[2026-11-15 18:19:37,469] INFO: [G2] Seed 1/2
+[2026-11-15 18:19:58,030] INFO:   Created 9518 windows from 150 sequences
+[2026-11-15 18:19:58,158] INFO:   Created 59 windows from 59 sequences
+[2026-11-15 18:19:58,386] INFO:   Model params: 44.2K
+[2026-11-15 18:19:58,387] INFO:   Train windows: 9518, Val windows: 59
+[2026-11-15 18:20:01,780] INFO:   E 10/40: loss=1.8943 tr_acc=0.3501 val_acc=0.0678 best=0.0847 (e4)
+[2026-11-15 18:20:03,650] INFO:   Early stop at epoch 19
+[2026-11-15 18:20:03,650] INFO: [G2] Seed 0 = 0.0847
+[2026-11-15 18:20:03,650] INFO: [G2] Seed 2/2
+[2026-11-15 18:20:22,932] INFO:   Created 9518 windows from 150 sequences
+[2026-11-15 18:20:25,188] INFO:   Created 59 windows from 59 sequences
+[2026-11-15 18:20:25,191] INFO:   Model params: 44.2K
+[2026-11-15 18:20:25,191] INFO:   Train windows: 9518, Val windows: 59
+[2026-11-15 18:20:29,388] INFO:   E 10/40: loss=1.8788 tr_acc=0.3628 val_acc=0.0678 best=0.0678 (e1)
+[2026-11-15 18:20:30,833] INFO:   Early stop at epoch 16
+[2026-11-15 18:20:30,833] INFO: [G2] Seed 1 = 0.0678
+[2026-11-15 18:20:30,833] INFO: G2: 0.0763+/-0.0085
+[2026-11-15 18:20:30,833] INFO: Results saved to L3/results_pairwise

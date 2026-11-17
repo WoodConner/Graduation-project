@@ -1,0 +1,13 @@
+[2026-11-11 18:34:55,630] INFO: Device=cuda steps=5 num_hyp=4 chunk=128
+[2026-11-11 18:35:44,442] INFO: Loaded checkpoint (key=None)
+[2026-11-11 18:35:44,442] INFO: Phase 1 (test-only): inferring S9/S11 ...
+Traceback (most recent call last):
+  File "/home/wood/long task/FMPose3D_PathA/L3/gen_l2_poses.py", line 151, in <module>
+    main()
+  File "/home/wood/long task/FMPose3D_PathA/L3/gen_l2_poses.py", line 125, in main
+    va_seqs, va_lbls = gen_sequences(model, det_pos, H36M_TEST_SUBJECTS,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wood/long task/FMPose3D_PathA/L3/gen_l2_poses.py", line 85, in gen_sequences
+    seq_2d = np.array(seq_2d)
+             ^^^^^^^^^^^^^^^^
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (4,) + inhomogeneous part.

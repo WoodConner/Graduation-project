@@ -1,0 +1,10 @@
+Loading dataset...
+INFO: Testing on 543360 frames
+Loading model...
+Model loaded!
+Testing S=3 with 8 hypotheses...
+  0%|          | 0/2123 [00:00<?, ?it/s]  0%|          | 0/2123 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/wood/long task/FMPose3D_PathA/test_e10_s3.py", line 46, in <module>
+    batch_cam
+NameError: name 'batch_cam' is not defined

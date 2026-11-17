@@ -1,0 +1,15 @@
+[2026-11-11 18:40:39,724] INFO: Device=cuda steps=5 num_hyp=4 chunk=128
+[2026-11-11 18:40:47,304] INFO: Loaded checkpoint (key=None)
+[2026-11-11 18:40:47,304] INFO: Phase 1 (test-only): inferring S9/S11 ...
+/home/wood/long task/FMPose3D_PathA/L3/gen_l2_poses.py:54: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[2026-11-11 18:41:13,723] INFO:   10/59 actions done
+[2026-11-11 18:41:26,980] INFO:   20/59 actions done
+[2026-11-11 18:41:41,702] INFO:   30/59 actions done
+[2026-11-11 18:41:49,862] INFO:   40/59 actions done
+[2026-11-11 18:41:59,425] INFO:   50/59 actions done
+[2026-11-11 18:42:11,011] INFO:   Generated 59 seqs from subjects [9, 11]
+[2026-11-11 18:42:11,011] INFO: Loading GT 3D for train sequences (G2-test-only mode)...
+[2026-11-11 18:42:13,079] INFO:   Loaded 150 sequences from [1, 5, 6, 7, 8]
+[2026-11-11 18:42:13,080] INFO: G2-test-only: train=GT(150), val=L2(59)
+[2026-11-11 18:42:13,214] INFO: Saved to L3/l2_poses_test.npz | train=150 val=59

@@ -1,0 +1,26 @@
+[2026-11-11 18:03:34,325] INFO: Loading GT 3D...
+[2026-11-11 18:03:36,071] INFO:   Loaded 150 sequences from [1, 5, 6, 7, 8]
+[2026-11-11 18:03:37,610] INFO:   Loaded 59 sequences from [9, 11]
+[2026-11-11 18:03:37,611] WARNING: L2 placeholder: using GT
+[2026-11-11 18:03:37,612] INFO: [G1] Seed 1/3
+[2026-11-11 18:03:38,058] INFO:   Train windows: 9518, Val windows: 59 (aug=False)
+[2026-11-11 18:03:38,217] INFO:   Params: 0.16M, dropout=0.5
+[2026-11-11 18:04:04,956] INFO:   E 10/40 loss=1.3842 tr=0.5152 val=0.3051 best=0.3898 (e7, no_improve=3)
+[2026-11-11 18:04:42,451] INFO:   E 20/40 loss=1.1131 tr=0.6142 val=0.3729 best=0.3898 (e7, no_improve=13)
+[2026-11-11 18:04:46,745] INFO:   Early stop at epoch 22 (no improvement for 15 epochs)
+[2026-11-11 18:04:46,746] INFO: [G1] Seed 0 = 0.3898
+[2026-11-11 18:04:46,746] INFO: [G1] Seed 2/3
+[2026-11-11 18:04:47,334] INFO:   Train windows: 9518, Val windows: 59 (aug=False)
+[2026-11-11 18:04:47,354] INFO:   Params: 0.16M, dropout=0.5
+[2026-11-11 18:05:11,913] INFO:   E 10/40 loss=1.3675 tr=0.5231 val=0.3390 best=0.4407 (e8, no_improve=2)
+[2026-11-11 18:05:36,607] INFO:   E 20/40 loss=1.1235 tr=0.6059 val=0.4068 best=0.4407 (e8, no_improve=12)
+[2026-11-11 18:05:43,793] INFO:   Early stop at epoch 23 (no improvement for 15 epochs)
+[2026-11-11 18:05:43,794] INFO: [G1] Seed 1 = 0.4407
+[2026-11-11 18:05:43,794] INFO: [G1] Seed 3/3
+[2026-11-11 18:05:44,265] INFO:   Train windows: 9518, Val windows: 59 (aug=False)
+[2026-11-11 18:05:44,281] INFO:   Params: 0.16M, dropout=0.5
+[2026-11-11 18:06:08,884] INFO:   E 10/40 loss=1.3405 tr=0.5352 val=0.2203 best=0.4068 (e2, no_improve=8)
+[2026-11-11 18:06:27,011] INFO:   Early stop at epoch 17 (no improvement for 15 epochs)
+[2026-11-11 18:06:27,011] INFO: [G1] Seed 2 = 0.4068
+[2026-11-11 18:06:27,019] INFO: G1: 0.4124+/-0.0211
+[2026-11-11 18:06:27,019] INFO: Results: L3/results/

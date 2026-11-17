@@ -1,0 +1,17 @@
+nohup: ignoring input
+[2026-11-15 12:22:50,075] INFO: [G1] Loading data...
+[2026-11-15 12:22:52,236] INFO:   Train: 150 sequences
+[2026-11-15 12:22:52,248] INFO:   Val: 59 sequences (GT)
+[2026-11-15 12:22:52,248] INFO: [G1] Training 2 seeds...
+[2026-11-15 12:22:52,248] INFO: [G1] Seed 1/2
+[2026-11-15 12:23:01,465] INFO:   Params: 8.49M
+[2026-11-15 12:23:25,970] INFO:   E 1/30 loss=2.7016 val=0.1356 best=0.1356 (no_improve=0)
+[2026-11-15 12:23:29,460] INFO:   E 10/30 loss=2.5458 val=0.2203 best=0.2203 (no_improve=0)
+[2026-11-15 12:23:32,553] INFO:   Early stop at epoch 18
+[2026-11-15 12:23:32,554] INFO: [G1] Seed 0 = 0.2203
+[2026-11-15 12:23:32,554] INFO: [G1] Seed 2/2
+[2026-11-15 12:23:42,055] INFO:   Params: 8.49M
+[2026-11-15 12:23:42,441] INFO:   E 1/30 loss=2.7565 val=0.0678 best=0.0678 (no_improve=0)
+[2026-11-15 12:23:45,414] INFO:   Early stop at epoch 9
+[2026-11-15 12:23:45,415] INFO: [G1] Seed 1 = 0.0678
+[2026-11-15 12:23:45,415] INFO: G1: 0.1441+/-0.0763
